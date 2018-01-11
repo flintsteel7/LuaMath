@@ -7,3 +7,5 @@ While Keith's examples are done using the HTML5 `<canvas>` element and JavaScrip
 This is just to help myself learn Lua and math.
 
 To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in your path, then cd into an Episode's directory and type `love .` in the console.
+
+- [Episode 1 - Introduction](https://github.com/flintsteel7/LuaMath/tree/master/episode1): Draw 100 random black lines on a white background
