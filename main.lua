@@ -1,8 +1,10 @@
 function love.load()
-  love.window.setMode(1200, 800)
-  love.window.setTitle("Lua Math")
-end
+  title = "Lua Math: Boilerplate"
+  window_width = 1200
+  window_height = 800
 
-function love.draw()
+  love.window.setMode(window_width, window_height)
+  love.window.setTitle(title)
+
   love.graphics.setBackgroundColor(255, 255, 255)
 end
