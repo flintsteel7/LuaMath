@@ -11,7 +11,7 @@ function love.load()
   love.graphics.setBackgroundColor(255, 255, 255)
 end
 
--- ensure we get a different random lines every time
+-- ensure we get different random lines every time
 math.randomseed(os.time())
 
 -- create a table with 100 sets of begin and end coordinates
