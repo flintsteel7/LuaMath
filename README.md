@@ -10,3 +10,7 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
 
 - [Episode 1 - Introduction](https://github.com/flintsteel7/LuaMath/tree/master/episode01): Draw 100 random black lines on a white background (also, establish boilerplate, which lives in the root directory as main.lua)
 - [Episode 2 - Intro to Trigonometry](https://github.com/flintsteel7/LuaMath/tree/master/episode02): Draw a black sine wave on a white background
+- [Episode 3 - More Trigonometry](https://github.com/flintsteel7/LuaMath/tree/master/episode03): Use the sine function to animate a black circle in several ways:
+  - moving up and down
+  - growing and shrinking
+  - fading in and out
