@@ -3,7 +3,6 @@ window_width = 1200
 window_height = 800
 
 function love.load()
-
   love.window.setMode(window_width, window_height)
   love.window.setTitle(title)
 
