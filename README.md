@@ -6,7 +6,7 @@ While Keith's examples are done using the HTML5 `<canvas>` element and JavaScrip
 
 This is just to help myself learn Lua and math.
 
-To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in your path, then cd into an Episode's directory and type `love .` in the console.
+To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in your path, then either enter `love episode#` where # is the number of the episode you'd like to run, or cd into an Episode's directory and type `love .` in the console.
 
 - [Episode 1 - Introduction](https://github.com/flintsteel7/LuaMath/tree/master/episode01): Draw 100 random black lines on a white background (also, establish boilerplate, which lives in the root directory as main.lua)
 - [Episode 2 - Intro to Trigonometry](https://github.com/flintsteel7/LuaMath/tree/master/episode02): Draw a black sine wave on a white background
@@ -14,3 +14,6 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
   - moving up and down
   - growing and shrinking
   - fading in and out
+- [Episode 4 - Circles, Ellipses and Lissajous Curves](https://github.com/flintsteel7/LuaMath/tree/master/episode04): Use the sine and cosine funcitons to:
+  - animate objects along a circle, ellipse, or lissajous curve
+  - draw *n* number of objects evenly spaced around a circle
