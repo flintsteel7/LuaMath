@@ -17,3 +17,6 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
 - [Episode 4 - Circles, Ellipses and Lissajous Curves](https://github.com/flintsteel7/LuaMath/tree/master/episode04): Use the sine and cosine funcitons to:
   - animate objects along a circle, ellipse, or lissajous curve
   - draw *n* number of objects evenly spaced around a circle
+- [Episode 5 - Arctangent](https://github.com/flintsteel7/LuaMath/tree/master/episode05): Use atan functions to:
+  - make a fixed arrow always point to the position of the mouse cursor
+  - make an arrow orbiting the center of the window always point toward the position of the mouse cursor

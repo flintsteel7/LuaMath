@@ -1,4 +1,4 @@
-title = "Lua Math: Chapter 4 - Circles, Ellipses and Lissajous Curves"
+title = "Lua Math: Episode 4 - Circles, Ellipses and Lissajous Curves"
 window_width = 1200
 window_height = 800
 
