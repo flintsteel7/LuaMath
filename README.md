@@ -20,3 +20,7 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
 - [Episode 5 - Arctangent](https://github.com/flintsteel7/LuaMath/tree/master/episode05): Use atan functions to:
   - make a fixed arrow always point to the position of the mouse cursor
   - make an arrow orbiting the center of the window always point toward the position of the mouse cursor
+- [Episode 7 - Vectors Part 2](https://github.com/flintsteel7/LuaMath/tree/master/episode07): Write a minimal 2D Vector library with several methods:
+  - create, setX, getX, setY, getY
+  - add, subtract, multiply, divide
+  - addTo, subtractFrom, multiplyBy, divideBy (mutating)
