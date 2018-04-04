@@ -25,3 +25,4 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
   - setX, setY, setAngle, setLength (mutating)
   - add, subtract, multiply, divide (return new)
   - addTo, subtractFrom, multiplyBy, divideBy (mutating)
+- [Episode 8 - Velocity](https://github.com/flintsteel7/LuaMath/tree/master/episode08): Write a basic particle library and animate some particles using vector addition.

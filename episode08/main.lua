@@ -13,9 +13,15 @@ function love.load()
   love.graphics.setColor(0, 0, 0)
 end
 
-p = particle:create(100, 100, 3, math.pi / 6)
+particles = {}
+for i = 1, 100 do
+  particles[i] = particle:create(window_width / 2, window_height / 2, math.random() * 4 + 1, math.random() * math.pi * 2)
+end
 
 function love.draw()
-  love.graphics.circle("fill", p.position:getX(), p.position:getY(), 10)
-  p:update()
+  for i = 1, #particles do
+    p = particles[i]
+    love.graphics.circle("fill", p.position:getX(), p.position:getY(), 10)
+    p:update()
+  end
 end
