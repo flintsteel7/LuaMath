@@ -13,7 +13,13 @@ function love.load()
 end
 
 position = vector:create(100, 100)
+velocity = vector:create(0, 0)
+
+velocity:setLength(3)
+velocity:setAngle(math.pi / 6)
 
 function love.draw()
+
   love.graphics.circle("fill", position:getX(), position:getY(), 10)
+  position:addTo(velocity)
 end
