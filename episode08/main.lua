@@ -1,6 +1,7 @@
-vector = require "vector"
+local vector = require "vector"
+local particle = require "particle"
 
-title = "Lua Math: Episode 7 - Vectors Part 2"
+title = "Lua Math: Episode 8 - Velocity"
 window_width = 1200
 window_height = 800
 
@@ -12,14 +13,9 @@ function love.load()
   love.graphics.setColor(0, 0, 0)
 end
 
-position = vector:create(100, 100)
-velocity = vector:create(0, 0)
-
-velocity:setLength(3)
-velocity:setAngle(math.pi / 6)
+p = particle:create(100, 100, 3, math.pi / 6)
 
 function love.draw()
-
-  love.graphics.circle("fill", position:getX(), position:getY(), 10)
-  position:addTo(velocity)
+  love.graphics.circle("fill", p.position:getX(), p.position:getY(), 10)
+  p:update()
 end
