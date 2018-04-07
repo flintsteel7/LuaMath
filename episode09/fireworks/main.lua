@@ -1,4 +1,4 @@
-package.path = package.path .. ";../?.lua"
+package.path = package.path .. ";../?.lua;./episode09/?.lua"
 local vector = require "vector"
 local particle = require "particle"
 

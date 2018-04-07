@@ -28,4 +28,4 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
 - [Episode 8 - Velocity](https://github.com/flintsteel7/LuaMath/tree/master/episode08): Write a basic particle library and animate some particles using vector addition.
 - [Episode 9 - Acceleration](https://github.com/flintsteel7/LuaMath/tree/master/episode09): Add acceleration to a couple of the animations from Episode 8
   - cause a ball to arc across the screen from bottom left to bottom right, following an acceleration curve.
-  - add gravity to the 'fireworks' particle burst, giving it a more realistic appearance. (To run, cd into the episode09 folder, and type `love fireworks`)
+  - add gravity to the 'fireworks' particle burst, giving it a more realistic appearance. (To run, from root folder, type `love episode09/fireworks`)
