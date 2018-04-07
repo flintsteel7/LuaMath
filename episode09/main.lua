@@ -2,7 +2,7 @@
 local vector = require "vector"
 local particle = require "particle"
 
-title = "Lua Math: Episode 8 - Velocity"
+title = "Lua Math: Episode 9 - Acceleration"
 window_width = 1200
 window_height = 800
 
