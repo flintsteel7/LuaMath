@@ -7,7 +7,7 @@ local particle = {
 }
 
 function particle:create(x, y, speed, direction, grav)
-  obj = {
+  local obj = {
     position = vector:create(x, y),
     velocity = vector:create(0, 0),
     gravity = vector:create(0, grav or 0)

@@ -1,7 +1,7 @@
-local vector = {x = 1, y = 0}
+local vector = {x = 0, y = 0}
 
 function vector:create(x, y)
-  obj = {x = x, y = y} or {}
+  local obj = {x = x, y = y} or {}
   self.__index = self
   setmetatable(obj, self)
   return obj
@@ -24,7 +24,7 @@ function vector:getY()
 end
 
 function vector:setAngle(angle)
-  length = self:getLength()
+  local length = self:getLength()
   self.x = math.cos(angle) * length
   self.y = math.sin(angle) * length
 end
@@ -34,7 +34,7 @@ function vector:getAngle()
 end
 
 function vector:setLength(length)
-  angle = self:getAngle()
+  local angle = self:getAngle()
   self.x = math.cos(angle) * length
   self.y = math.sin(angle) * length
 end

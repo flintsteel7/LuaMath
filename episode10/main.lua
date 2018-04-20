@@ -16,19 +16,32 @@ end
 
 ship = particle:create(window_width / 2, window_height / 2, 0, 0)
 thrust = vector:create()
+angle = 0
+turning_left = false
+turning_right = false
+thrusting = false
 
 function love.update(dt)
-  if love.keyboard.isDown("up") then
-    thrust:setY(-0.1)
-  elseif love.keyboard.isDown("down") then
-    thrust:setY(0.1)
-  elseif love.keyboard.isDown("left") then
-    thrust:setX(-0.1)
-  elseif love.keyboard.isDown("right") then
-    thrust:setX(0.1)
+  -- get user input
+  thrusting = love.keyboard.isDown("up")
+  turning_left = love.keyboard.isDown("left")
+  turning_right = love.keyboard.isDown("right")
+
+  -- handle rotation
+  if turning_left then
+    angle = angle - 0.05
+  end
+  if turning_right then
+    angle = angle + 0.05
+  end
+
+  -- handle thrust
+  thrust:setAngle(angle)
+
+  if thrusting then
+    thrust:setLength(0.1)
   else
-    thrust:setY(0)
-    thrust:setX(0)
+    thrust:setLength(0)
   end
 
   -- cause ship to wrap if it goes off screen
@@ -50,5 +63,18 @@ function love.draw()
   ship:accelerate(thrust)
   ship:update()
 
-  love.graphics.circle("fill", ship.position:getX(), ship.position:getY(), 10)
+  -- translate and rotate the coordinate system
+  love.graphics.translate(ship.position:getX(), ship.position:getY())
+  love.graphics.rotate(angle)
+
+  -- draw the ship
+  love.graphics.line(-10,-7, -10,7, 10,0, -10,-7)
+  if thrusting then
+    love.graphics.setColor(139, 0, 0)
+    love.graphics.line(-10,0, -18,0)
+    love.graphics.setColor(0, 0, 0)
+  end
+  
+  -- restore the original coordinate system
+  love.graphics.origin()
 end

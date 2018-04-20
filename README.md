@@ -29,3 +29,6 @@ To run any of the demos, ensure you have LÖVE 2D and Lua 5.3 installed and in y
 - [Episode 9 - Acceleration](https://github.com/flintsteel7/LuaMath/tree/master/episode09): Add acceleration to a couple of the animations from Episode 8
   - cause a ball to arc across the screen from bottom left to bottom right, following an acceleration curve.
   - add gravity to the 'fireworks' particle burst, giving it a more realistic appearance. (To run, from root folder, type `love episode09/fireworks`)
+- [Episode 10 - Advanced Acceleration](https://github.com/flintsteel7/LuaMath/tree/master/episode10): Draw a space ship that behaves similarly to the player's ship in the classic Asteroids video game:
+  - it can be rotated using the right and left arrow keys
+  - it will thrust in the direction it's pointing when the up arrow key is pressed

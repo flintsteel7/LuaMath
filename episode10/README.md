@@ -1,6 +1,8 @@
 ## Lua Math: Episode 10 - Advanced Acceleration
 
-Add some acceleration to a couple animations from Episode 8
+Draw a space ship that:
 
-- cause a ball to arc across the screen from bottom left to bottom right, following an acceleration curve.
-- add gravity to the 'fireworks' particle burst, giving it a more realistic appearance. (To run from within episode09 folder, type `love fireworks`)
+- can be rotated using the right and left arrow keys
+- will thrust in the direction it's pointing when the up arrow key is pressed
+
+This ship behaves similarly to the player's ship in the classic Asteroids video game.
