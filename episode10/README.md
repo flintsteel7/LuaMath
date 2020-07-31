@@ -6,3 +6,5 @@ Draw a space ship that:
 - will thrust in the direction it's pointing when the up arrow key is pressed
 
 This ship behaves similarly to the player's ship in the classic Asteroids video game.
+
+![space ship (small triangle) that accelerates in the direction it's pointing when the up arrow key is pressed](episode10.gif)

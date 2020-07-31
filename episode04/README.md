@@ -7,3 +7,5 @@ Use sine and cosine functions to:
 - draw *n* number of objects evenly spaced around a circle
 
 **Challenge:** Draw *n* number of objects around an ellipse or lissajous curve by combining code from the animation examples with code form the evenly spaced objects example
+
+![black dots following circular paths and lissajous curve, plus dots evenly spaced around a radius](episode4.gif)
